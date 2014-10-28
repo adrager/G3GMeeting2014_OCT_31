@@ -85,13 +85,13 @@
 \begin{frame}
 %\frametitle{Did We Discover the Standard-Model Higgs?}
 \begin{itemize}
- \item Main Idea: Remove four-momentum of reconstructed \Zll events in RA2b selection (except lepton veto) Recompute relevant quantities (e.q. \met, $\Delta\Phi_{N}^{min}$)
+ \item Main Idea: Remove four-momentum of reconstructed \Zll events in RA2b selection (except lepton veto). Recompute relevant quantities (e.q. \met, $\Delta\Phi_{N}^{min}$)
  \item Work flow:
  \begin{itemize}
-  \item Correct for branching fracftion ($R = 5.95$)
+  \item Correct for branching fraction ($R = 5.95$)
   \item Increase statistics of \Zll events by loosening bjet tagger and applying a scale factor ($F$) to each b-jet bin
   \item Measure efficiency ($\epsilon$) of reconstructing \Zll event
-  \item Determine and correct for putity ($P$) of \Zll selection
+  \item Determine and correct for purity ($P$) of \Zll selection
   \item Apply lepton acceptance corrections ($A$)
  \end{itemize}
 \end{itemize}
@@ -114,8 +114,8 @@ Selection cuts:
 \begin{itemize}
  \item $\met > 125 \gev, \HT > 400 \gev $ and $\Delta\Phi_{N}^{min}>4$
  \item At least 3 jets ($p_{T\text{1}},p_{T\text{2}} > 70\gev$, $p_{T\text{3}} > 50\gev$) and \\ at least 1 CSVL jet
- \item Electrons: miniAOD slimmedElectrons workpoint 'veto' ($\pt>17\gev$)
- \item Muons: miniAOD slimmedMuons workpoint 'tight' ($\pt>17\gev$)
+ \item Electrons: miniAOD slimmedElectrons work-point 'veto' ($\pt>17\gev$)
+ \item Muons: miniAOD slimmedMuons work-point 'tight' ($\pt>17\gev$)
 \end{itemize}
 Efficiency determination via Tag \& Probe method
 \begin{itemize}
@@ -129,7 +129,7 @@ Efficiency determination via Tag \& Probe method
 \subsection{\Zll - Conclusion}
 \begin{frame}
 %\frametitle{Did We Discover the Standard-Model Higgs?}
-Show here obtained efficiencies maybe comprae to 2012?
+Show here obtained efficiencies maybe compare to 2012?
 \end{frame}
 
 % --------------------------------------------------
@@ -137,25 +137,34 @@ Show here obtained efficiencies maybe comprae to 2012?
 \begin{frame}
 %\frametitle{Did We Discover the Standard-Model Higgs?}
 \begin{itemize}
- \item Main Idea: Exploit kinematic similarities of Z/$\gamma$ at high boson \pt 
+ \item Main Idea: Exploit kinematic similarities of Z/$\gamma$ at high boson \pt.
  \item Work flow:
  \begin{itemize}
-  \item Correct for branching fracftion ($R = 5.95$)
-  \item Increase statistics of \Zll events by loosening bjet tagger and applying a scale factor ($F$) to each b-jet bin
-  \item Measure efficiency ($\epsilon$) of reconstructing \Zll event
-  \item Determine and correct for putity ($P$) of \Zll selection
+  \item Remove $\gamma$ from event and recompute search variables
+  \item Apply Z/$\gamma$ ratio correction parametrized in \MHT \& \NJets
+  \item Correct for $\gamma$ acceptance and reconstruction efficiency ($\epsilon_{\text{ID/Iso}}$)
   \item Apply lepton acceptance corrections ($A$)
  \end{itemize}
 \end{itemize}
   \begin{centering}
-  $\text{N }(\ZInv) = \text{N }(\Zll)\cdot F \cdot P \cdot R / (A\cdot \epsilon)$
+  $\text{N }(\ZInv) = \text{N }(\gamma)\cdot R(\ZInv/\gamma)\cdot P\xspace/ (A\cdot \epsilon_{\text{ID/Iso}})$
   \end{centering}
-  \begin{block}{}
+\begin{block}{}
 \centering
 % SAY: 2 ways to proceed
-Determination of \Zll efficiencies and purity using 13\tev 25ns HT binned DY csa14 samples
+Study of photon (slimmedPhotons) $\epsilon_{\text{ID/Iso}}$ efficiencies using 13\tev miniAOD MC (50 ns BX \& 40 PU) at $\HT>400\gev$\\
+Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
 \end{block}
+
 \end{frame}
+
+\begin{frame}
+Show 8 vs 13 TeV isolation and reconstruction
+\end{frame}
+\begin{frame}
+ Conclusion
+\end{frame}
+
 
 % --------------------------------------------------
 
@@ -166,8 +175,8 @@ Selection cuts:
 \begin{itemize}
  \item $\met > 125 \gev, \HT > 400 \gev $ and $\Delta\Phi_{N}^{min}>4$
  \item At least 3 jets ($p_{T\text{1}},p_{T\text{2}} > 70\gev$, $p_{T\text{3}} > 50\gev$) and \\ at least 1 CSVL jet
- \item Electrons: miniAOD slimmedElectrons workpoint 'veto' ($\pt>17\gev$)
- \item Muons: miniAOD slimmedMuons workpoint 'tight' ($\pt>17\gev$)
+ \item Electrons: miniAOD slimmedElectrons work-point 'veto' ($\pt>17\gev$)
+ \item Muons: miniAOD slimmedMuons work-point 'tight' ($\pt>17\gev$)
 \end{itemize}
 Efficiency determination via Tag \& Probe method
 \begin{itemize}
@@ -181,7 +190,7 @@ Efficiency determination via Tag \& Probe method
 \subsection{\Zll - Conclusion}
 \begin{frame}
 %\frametitle{Did We Discover the Standard-Model Higgs?}
-Show here obtained efficiencies maybe comprae to 2012?
+Show here obtained efficiencies maybe compare to 2012?
 \end{frame}
 
 % --------------------------------------------------
@@ -199,7 +208,7 @@ Show here obtained efficiencies maybe comprae to 2012?
       \item Select a control sample (CS) of exactly one well isolated $\mu$ within the acceptance
         \begin{itemize}
         \item Weight each CS event according to efficiencies for each identification step \\ (efficiencies determined from \ttbar and \wpj sample)
-        \item Isolateion and reconstruction efficiency in \HT, \MHT and \NJets parametrized
+        \item Isolation and reconstruction efficiency in \HT, \MHT and \NJets parametrized
         \item Acceptance in \MHT and \NJets
         \end{itemize}
       \end{itemize}
@@ -253,9 +262,9 @@ Show here obtained efficiencies maybe comprae to 2012?
 \subsection{di leptonic contribution}
 \begin{frame}
 \begin{itemize}
- \item The $\mt$ cut reduces di leptonic \ttbar contribution to the single $\mu$ controlsample from ~5\% to about ~3\%
- \item But since the propability of losing two leptons is less likely than one di leptonic events are overestimated
- \item Separted estimation of lost di leptonic events applied
+ \item The $\mt$ cut reduces di leptonic \ttbar contribution to the single $\mu$ control sample from ~5\% to about ~3\%
+ \item But since the probability of losing two leptons is less likely than one di leptonic events are overestimated
+ \item Separated estimation of lost di leptonic events applied
  \item Contribution to total amount of lost leptons ~1\%
 \end{itemize}
   \begin{columns}
@@ -272,7 +281,7 @@ Show here obtained efficiencies maybe comprae to 2012?
   \end{columns}
 \end{frame}
 % --------------------------------------------------
-\subsection{Clousre}
+\subsection{Closure}
 \begin{frame}
 
 Closure test for the lost lepton method:\\
@@ -301,6 +310,6 @@ Closure test for the lost lepton method:\\
 \end{frame}
 % --------------------------------------------------
 
-\setcounter{framenumber}{24}
+\setcounter{framenumber}{14}
 
 \end{document}
