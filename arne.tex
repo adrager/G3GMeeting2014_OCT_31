@@ -1,0 +1,197 @@
+\documentclass{beamer}
+
+\usetheme[secheader]{Boadilla}
+\setbeamertemplate{footline} {
+  %\leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\hspace*{2ex}\insertshortauthor~~(adraeger@cern.ch)
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshorttitle,~
+    \insertshortdate{}\hspace*{1em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\beamertemplatenavigationsymbolsempty
+
+\usepackage[percent]{overpic}
+\usepackage{tikz}
+%\usetikzlibrary{positioning,fit,shapes.arrows,shapes.geometric,shapes.misc,shapes.multipart,calc,shadows}
+\tikzstyle{every picture}+=[remember picture]
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\graphicspath{{../../logo/}{figures/}{../../graphic-common/}}
+
+\input{definitions.tex}
+\newcommand{\lib}[1]{\tiny #1}
+
+% Title etc
+\title[G3G-Meeting]{Status Report from RA2/b}
+\subtitle{\ZInvJets using \Zll and\\ \ttbar \WJets using \muonJets}
+\author[Arne-Rasmus~Dr\"ager]{
+  Arne-Rasmus~Dr\"ager (Uni Hamburg)\\on behalf of the RA2/b team
+}
+\date[October 31, 2014]{October 31, 2014
+  \vskip1cm
+  \begin{center}
+    \includegraphics[height=1cm]{Universitaet-Hamburg-Logo.jpg}
+    \hskip8cm
+    \includegraphics[height=1cm]{CMSlogo.jpeg}
+  \end{center}
+}
+
+% pdflatex packages
+\hypersetup{bookmarks=true}
+\hypersetup{unicode=false}
+\hypersetup{pdftitle={Search for Higgs Bosons Beyond the Standard Model with the CMS Detector}}
+\hypersetup{pdfauthor={Matthias Schr\"oder}}
+
+
+\begin{document}
+% ==================================================
+% --------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Introduction}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Did We Discover the Standard-Model Higgs?}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item General indications of physics beyond the Standard Model
+        \begin{itemize}
+        \item Dark matter
+        \item Fine-tuning problem
+        \end{itemize}
+      \item Observed boson compatible with Standard-Model Higgs
+      \item But from couplings analysis\footnote[frame]{presented on Monday by Shivali~Malhotra}:\\ \textbf{plenty of room for BSM Higgs decays!}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \begin{overpic}[width=0.9\textwidth]{figures/MuonAcc.pdf}
+        %\put(19,45){\colorbox{white}{\red{$\text{BR}_{\text{BSM}} < 32\%$ at 95\% CL}}}
+        \put(6,39){\colorbox{white}{\textcolor{red}{\bf BSM decays?}}}
+        %\put(18,30){\textcolor{red}{$\longleftrightarrow$}}
+  %      \put(17,30){\includegraphics[width=1.3cm]{aux/left-right-arrow_red.pdf}}
+        \put(97,88){\rotatebox{-90}{\scriptsize CMS PAS HIG-14-009}}
+        \put(13,2){\tiny assuming no tree-level modifications}
+      \end{overpic}
+    \end{column}
+  \end{columns}
+  \begin{block}{}
+    \centering
+    % SAY: 2 ways to proceed
+    What are the properties of the new boson?\\
+    Are there any additional Higgs bosons?
+  \end{block}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Examples of Models with Extended Higgs Sector}
+  \begin{columns}[T]
+    \begin{column}{0.7\textwidth}
+      \textbf{Supersymmetry}
+      \begin{itemize}
+      \item Well-motivated extension of Standard Model
+        \begin{itemize}
+        \item[\greencheck] Provides dark-matter candidates
+        \item[\greencheck] Solves fine-tuning problem
+        \end{itemize}
+      %\item Requires additional Higgs bosons
+      \item Minimal supersymmetric extension (MSSM)
+        \begin{itemize}
+        \item 2 Higgs doublets $\rightarrow$ \textbf{5 physical bosons}\\
+          \hskip3.1cm h, H, $\text{A}\equiv\Phi$ (neutral)\\
+          \hskip3.1cm H$^{+}$, H$^{-}$ (charged)
+        \item 2 tree-level parameters $m_{\text{A}}$ and $\tanbeta$
+        \item h usually identified with 125\gev boson
+        \end{itemize}
+      \item Next-to-Minimal model (NMSSM)
+        \begin{itemize}
+        \item 2 doublets + 1 singlet = 7 physical bosons
+        \end{itemize}
+      \end{itemize}
+      \textbf{Generic 2 Higgs-Doublet Models (2HDM)}
+      \begin{itemize}
+      \item Effective extension of Standard Model
+      \item Allows flavour-changing Yukawa couplings
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \centering
+      %\includegraphics[width=\textwidth]{figures/BUD_SPENCER_TERENCE_HILL_THUMBS_UP.jpg}\\
+      \includegraphics[width=\textwidth]{figures/MuonDiLep.pdf}
+      \vskip0.2cm
+      {\small MSSM predicts $m_{\text{h}}\lesssim135\gev$!}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Examples of BSM-Higgs Searches at CMS}
+  \begin{center}
+    \only<1>{\includegraphics[width=\textwidth]{figures/MuonRecoNJetHgih.pdf}}
+    \only<2>{\includegraphics[width=\textwidth]{figures/MuonRecoNJetHgih.pdf}}
+  \end{center}
+\end{frame}
+
+\section{Heavy Neutral Higgs \texorpdfstring{$\Phi\rightarrow\tau\tau$}{to 2 Tau-Leptons}}
+%\subsection{\href{http://cds.cern.ch/record/1623367}{CMS PAS HIG-13-021}}
+\subsection{\href{http://arxiv.org/abs/1408.3316}{submitted to JHEP (arXiv:1408.3316)}}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Search for a Heavy Neutral Higgs: $\Phi\rightarrow\tau\tau$}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \begin{overpic}[width=\textwidth]{figures/MuonAcc.pdf}
+        \put(30,81){\textcolor{green}{$\text{H}\rightarrow\text{bb}$}}
+        \put(30,64){\textcolor{blue}{$\text{H}\rightarrow\tau\tau$}}
+        \put(70,55){MSSM}
+      \end{overpic}
+      \begin{itemize}
+      \item \textcolor{blue}{$\Phi\rightarrow\tau\tau$ channel}
+        \begin{itemize}
+        \item Relatively large BR
+        \item Manageable backgrounds
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item \textbf{no b-tagged jet}
+        \begin{overpic}[width=0.6\textwidth]{figures/MuonRecoNJetHgih.pdf}
+        \end{overpic}
+        \begin{itemize}
+        \item gg-fusion production
+        \item Dominant at small $\tanbeta$
+        \end{itemize}
+      \item \vskip0.3cm\textbf{$\geq1$ b-tagged jets}
+        \begin{overpic}[width=0.6\textwidth]{figures/MuonRecoNJetHgih.pdf}
+        \end{overpic}
+        \begin{itemize}
+        \item Associated production
+        \item Dominant at larger $\tanbeta$
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+
+
+\setcounter{framenumber}{24}
+
+\end{document}
