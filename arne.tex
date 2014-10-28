@@ -32,7 +32,7 @@
 
 % Title etc
 \title[G3G-Meeting]{Status Report from RA2/b}
-\subtitle{\ZInvJets using \Zll and\\ \ttbar \WJets using \muonJets}
+\subtitle{\ZInvJets using \Zll and\\ \ttbar \wpj using \muonJets}
 \author[Arne-Rasmus~Dr\"ager]{
   Arne-Rasmus~Dr\"ager (Uni Hamburg)\\on behalf of the RA2/b team
 }
@@ -77,7 +77,7 @@
     \end{column}
     \begin{column}{0.5\textwidth}
       \centering
-      \begin{overpic}[width=0.9\textwidth]{figures/MuonAcc.pdf}
+      \begin{overpic}[width=0.9\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
         %\put(19,45){\colorbox{white}{\red{$\text{BR}_{\text{BSM}} < 32\%$ at 95\% CL}}}
         \put(6,39){\colorbox{white}{\textcolor{red}{\bf BSM decays?}}}
         %\put(18,30){\textcolor{red}{$\longleftrightarrow$}}
@@ -130,7 +130,7 @@
     \begin{column}{0.3\textwidth}
       \centering
       %\includegraphics[width=\textwidth]{figures/BUD_SPENCER_TERENCE_HILL_THUMBS_UP.jpg}\\
-      \includegraphics[width=\textwidth]{figures/MuonDiLep.pdf}
+      \includegraphics[width=\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
       \vskip0.2cm
       {\small MSSM predicts $m_{\text{h}}\lesssim135\gev$!}
     \end{column}
@@ -141,8 +141,8 @@
 \begin{frame}
   \frametitle{Examples of BSM-Higgs Searches at CMS}
   \begin{center}
-    \only<1>{\includegraphics[width=\textwidth]{figures/MuonRecoNJetHgih.pdf}}
-    \only<2>{\includegraphics[width=\textwidth]{figures/MuonRecoNJetHgih.pdf}}
+    \only<1>{\includegraphics[width=\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}}
+    \only<2>{\includegraphics[width=\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}}
   \end{center}
 \end{frame}
 
@@ -155,7 +155,7 @@
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \centering
-      \begin{overpic}[width=\textwidth]{figures/MuonAcc.pdf}
+      \begin{overpic}[width=\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
         \put(30,81){\textcolor{green}{$\text{H}\rightarrow\text{bb}$}}
         \put(30,64){\textcolor{blue}{$\text{H}\rightarrow\tau\tau$}}
         \put(70,55){MSSM}
@@ -171,14 +171,14 @@
     \begin{column}{0.5\textwidth}
       \begin{itemize}
       \item \textbf{no b-tagged jet}
-        \begin{overpic}[width=0.6\textwidth]{figures/MuonRecoNJetHgih.pdf}
+        \begin{overpic}[width=0.6\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
         \end{overpic}
         \begin{itemize}
         \item gg-fusion production
         \item Dominant at small $\tanbeta$
         \end{itemize}
       \item \vskip0.3cm\textbf{$\geq1$ b-tagged jets}
-        \begin{overpic}[width=0.6\textwidth]{figures/MuonRecoNJetHgih.pdf}
+        \begin{overpic}[width=0.6\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
         \end{overpic}
         \begin{itemize}
         \item Associated production
@@ -190,8 +190,101 @@
 \end{frame}
 
 % --------------------------------------------------
+\section{Lost Lepton Background }
+\subsection{Basic concept}
+\begin{frame}
+\frametitle{Mainly \ttbar and \wpj events where prompt electrons and muons are lost}
+ \begin{figure}
+ \centering
+  \includegraphics[width = 0.4\textwidth]{figures/lepton_veto_sketch.png}
+%  \caption{Awesome figure}
+ \end{figure}
+\end{frame}
 
+\begin{frame}
+  \frametitle{Mainly \ttbar and \wpj events where prompt electrons and muons are lost}
+   \begin{figure}
+ \centering
+  \includegraphics[width = 0.65\textwidth]{figures/lepton_veto_sketch.png}
+%  \caption{Awesome figure}
+ \end{figure}
+      \begin{itemize}
+      \item Select a control sample (CS) of exactly one well isolated $\mu$ within the acceptance
+        \begin{itemize}
+        \item Weight each CS event according to efficiencies for each identification step \\ (efficiencies determined from \ttbar and \wpj sample)
+        \item Isolateion and reconstruction efficiency in \HT, \MHT and \NJets parametrized
+        \item Acceptance in \MHT and \NJets
+        \end{itemize}
+      \end{itemize}
+\end{frame}
+% --------------------------------------------------
+\subsection{\mt cut }
+\begin{frame}
+\begin{itemize}
+ \item Signal and other SM processes can contribute to $\mu$ control sample
+ \item Suppress contamination by requiring trans. mass $\mt < 100 \gev$ \\
+\end{itemize}
 
+\frametitle{}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+    \begin{centering}
+     $m_{T} = \sqrt{2 \cdot p_{T}(\mu)\cdot \met (1 - \cos(\Delta \Phi))}$
+\end{centering}
+      \begin{itemize}
+      \item Removes about 15\% of $\mu$ CS
+        \begin{itemize}
+        \item Most of them di-leptonic \ttbar decays
+        \item Mismeasured jets
+        \item Highly virtual W
+        \end{itemize}
+      \begin{centering}
+      \begin{overpic}[width=0.7\textwidth]{figures/MuMTWMHTNjet.pdf}
+      \end{overpic}
+      \end{centering}
+      \item Correction as a function of \MHT \NJets applied
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \centering
+      \begin{overpic}[width=0.8\textwidth]{figures/ControlSample__MTW__MCPrMTWDiLepTTbar+MCPrMTWDiLepW__mu_control_sample.pdf}
+        \put(41.52,83){\color{black}\line(0,-1){67}}
+    %    \put(6,39){\colorbox{white}{\textcolor{red}{\bf BSM decays?}}}
+    %    \put(97,88){\rotatebox{-90}{\scriptsize CMS PAS HIG-14-009}}
+    %    \put(13,2){\tiny assuming no tree-level modifications}
+      \end{overpic}
+      \begin{overpic}[width=0.8\textwidth]{figures/2012_ControlSample__MTW__Data_vs_TTbar+WJets__Baseline.pdf}
+        \put(41.52,83){\color{black}\line(0,-1){67}}
+    %    \put(6,39){\colorbox{white}{\textcolor{red}{\bf BSM decays?}}}
+    %    \put(97,88){\rotatebox{-90}{\scriptsize CMS PAS HIG-14-009}}
+    %    \put(13,2){\tiny assuming no tree-level modifications}
+      \end{overpic}
+    \end{column}
+  \end{columns}
+\end{frame}
+% --------------------------------------------------
+\subsection{di leptonic contribution}
+\begin{frame}
+\begin{itemize}
+ \item The $\mt$ cut reduces di leptonic \ttbar contribution to the single $\mu$ controlsample from ~5\% to about ~3\%
+ \item But since the propability of losing two leptons is less likely than one di leptonic events are overestimated
+ \item Separted estimation of lost di leptonic events applied
+ \item Contribution to total amount of lost leptons ~1\%
+\end{itemize}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+     \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/MuonDiLepMTW.pdf}
+     \end{overpic}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/MuonDiLepEff.pdf}
+      \end{overpic}
+    \end{column}
+  \end{columns}
+\end{frame}
+% --------------------------------------------------
 \setcounter{framenumber}{24}
 
 \end{document}
