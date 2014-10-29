@@ -299,13 +299,12 @@ Show 8 vs 13 TeV isolation and reconstruction
  \item Signal and other SM processes can contribute to $\mu$ control sample
  \item Suppress contamination by requiring trans. mass $\mt < 100 \gev$ \\
 \end{itemize}
-
-\frametitle{}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
     \begin{centering}
      $m_{T} = \sqrt{2 \cdot p_{T}(\mu)\cdot \met (1 - \cos(\Delta \Phi))}$
 \end{centering}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+
       \begin{itemize}
       \item Removes about 15\% of $\mu$ CS
         \begin{itemize}
@@ -314,13 +313,13 @@ Show 8 vs 13 TeV isolation and reconstruction
         \item Highly virtual W
         \end{itemize}
       \begin{centering}
-      \begin{overpic}[width=0.7\textwidth]{figures/MuMTWMHTNjet.pdf}
-      \end{overpic}
+     % \begin{overpic}[width=0.7\textwidth]{figures/MuMTWMHTNjet.pdf}
+    %  \end{overpic}
       \end{centering}
       \item Correction as a function of \MHT \NJets applied
       \end{itemize}
     \end{column}
-    \begin{column}{0.4\textwidth}
+    \begin{column}{0.6\textwidth}
       \centering
       \begin{overpic}[width=0.8\textwidth]{figures/ControlSample__MTW__MCPrMTWDiLepTTbar+MCPrMTWDiLepW__mu_control_sample.pdf}
         \put(41.52,83){\color{black}\line(0,-1){67}}
@@ -328,12 +327,12 @@ Show 8 vs 13 TeV isolation and reconstruction
     %    \put(97,88){\rotatebox{-90}{\scriptsize CMS PAS HIG-14-009}}
     %    \put(13,2){\tiny assuming no tree-level modifications}
       \end{overpic}
-      \begin{overpic}[width=0.8\textwidth]{figures/2012_ControlSample__MTW__Data_vs_TTbar+WJets__Baseline.pdf}
-        \put(41.52,83){\color{black}\line(0,-1){67}}
+   %   \begin{overpic}[width=0.8\textwidth]{figures/2012_ControlSample__MTW__Data_vs_TTbar+WJets__Baseline.pdf}
+    %    \put(41.52,83){\color{black}\line(0,-1){67}}
     %    \put(6,39){\colorbox{white}{\textcolor{red}{\bf BSM decays?}}}
     %    \put(97,88){\rotatebox{-90}{\scriptsize CMS PAS HIG-14-009}}
     %    \put(13,2){\tiny assuming no tree-level modifications}
-      \end{overpic}
+    %  \end{overpic}
     \end{column}
   \end{columns}
 \end{frame}
@@ -364,7 +363,7 @@ Show 8 vs 13 TeV isolation and reconstruction
 \begin{frame}
 
 Closure test for the lost lepton method:\\
-\centering$\HT > 500 \gev, \MHT>200 \gev$, $\NJets\ge 3$ $\Delta\Phi_{1,2,3}>$0.5 0.5 0.3
+\centering$\HT > 500 \gev$ , $\MHT>100 \gev$, $\NJets\ge 3$ , $\Delta\Phi_{1,2,3}>$0.5, 0.5, 0.3
   \begin{columns}
     \begin{column}{0.5\textwidth}
      \centering
@@ -377,12 +376,12 @@ Closure test for the lost lepton method:\\
       \centering
             \begin{overpic}[width=0.6\textwidth]{figures/Closure__MHT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
-      \begin{overpic}[width=0.6\textwidth]{figures/Closure__NVtx__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+      \begin{overpic}[width=0.6\textwidth]{figures/Closure__METPt__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
       \end{overpic}
     \end{column}
   \end{columns}
   \begin{itemize}
-   \item Good closure can be observed for all search variables
+   \item Good agreemend between expectation ($30462.9 \pm 60.0$) and prediction($29777.3 \pm 80.0$) for all search variables
    \item No pileup dependency visible
   \end{itemize}
 
@@ -397,6 +396,7 @@ Closure test for the lost lepton method:\\
  \begin{itemize}
   \item Efficiencies have been determined
   \item Comparison to 8\tev efficiencies show good agreemend with a slight increase espcially for reconstruction efficiency
+  \item Optimization of binning of efficiencies ongoing
   \item Closure test has been performed showing good agreemend between expectation and precdiction
  \end{itemize}
   \item \photonJets
@@ -414,6 +414,25 @@ Closure test for the lost lepton method:\\
 
 \end{frame}
 % --------------------------------------------------
+\section{Conclusion}
+\begin{frame}
+  \begin{center}
+    {\Large Additional Material}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Lost Lepton: Number of Vertices}
+ \centering
+ \begin{overpic}[width=0.6\textwidth]{figures/Closure__NVtx__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+     \end{overpic}
+\begin{itemize}
+ \item No dependency on the number of primariy verticies visible
+\end{itemize}
+
+\end{frame}
+
+
 
 \setcounter{framenumber}{15}
 
