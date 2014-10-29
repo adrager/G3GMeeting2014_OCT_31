@@ -32,7 +32,7 @@
 
 % Title etc
 \title[G3G-Meeting]{Status Report from RA2/b}
-\subtitle{\ZInvJets using \Zll \& \photonJets\\ \ttbar \wpj using \muonJets}
+\subtitle{Background Estimation Methods: \\\ZInvJets using \Zll \& \photonJets events\\ \ttbar \wpj Lost Leptong with \muonJets events}
 \author[Arne-Rasmus~Dr\"ager]{
   Arne-Rasmus~Dr\"ager (Uni Hamburg)\\on behalf of the RA2/b team
 }
@@ -66,11 +66,13 @@
 
   \begin{itemize}
    \item \ZInvJets events\\
-    \Zll Efficiencies \& purity 13\tev csa14 samples \\
-    \photonJets
+   \begin{itemize}
+    \item \Zll: Efficiencies
+    \item \photonJets: Photon studies 
+   \end{itemize}
    \item \wpj \& \ttbar events 
 \begin{itemize}
- \item Lost Lepton determination of efficiencies and full closure on 13\tev csa14 samples
+ \item Lost Lepton determination of efficiencies and full closure
 \end{itemize}
 
   \end{itemize}
@@ -126,10 +128,111 @@ Efficiency determination via Tag \& Probe method
 \end{frame}
 
 % --------------------------------------------------
-\subsection{\Zll - Conclusion}
+\subsection{\Zmumu -Efficiencies}
 \begin{frame}
-%\frametitle{Did We Discover the Standard-Model Higgs?}
-Show here obtained efficiencies maybe compare to 2012?
+\frametitle{Comparison of $\mu$ efficiencies}
+\centering
+ $\met>400, \HT>1000$
+   \begin{columns}
+    \begin{column}{0.5\textwidth}
+     \centering 8\tev
+    \end{column}
+        \begin{column}{0.5\textwidth}
+        \centering 13\tev
+     
+    \end{column}
+\end{columns}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+     \centering
+      \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZmm_pass.pdf}
+     \end{overpic}\\
+           \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZmm_fail.pdf}
+     \end{overpic}\\
+     
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \centering
+       \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZmm_pass.pdf}
+      \end{overpic}\\
+       \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZmm_fail.pdf}
+     \end{overpic}
+    \end{column}
+  \end{columns}
+   \begin{columns}
+    \begin{column}{0.5\textwidth}
+     \centering Efficiency: $\epsilon = 0.870 \pm 0.028$
+    \end{column}
+        \begin{column}{0.5\textwidth}
+        \centering Efficiency: $\epsilon = 0.930 \pm 0.010$
+     
+    \end{column}
+\end{columns}
+\end{frame}
+
+% --------------------------------------------------
+
+\subsection{\Zee -Efficiencies}
+\begin{frame}
+\frametitle{Comparison of electron efficiencies}
+\centering
+ $\met>400, \HT>1000$
+   \begin{columns}
+    \begin{column}{0.5\textwidth}
+     \centering 8\tev
+    \end{column}
+        \begin{column}{0.5\textwidth}
+        \centering 13\tev
+     
+    \end{column}
+\end{columns}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+     \centering
+      \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZee_pass.pdf}
+     \end{overpic}\\
+           \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZee_fail.pdf}
+     \end{overpic}\\
+     
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \centering
+       \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZee_pass.pdf}
+      \end{overpic}\\
+       \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZee_fail.pdf}
+     \end{overpic}
+    \end{column}
+  \end{columns}
+   \begin{columns}
+    \begin{column}{0.5\textwidth}
+     \centering Efficiency: $\epsilon =0.877 \pm 0.056$
+    \end{column}
+        \begin{column}{0.5\textwidth}
+        \centering Efficiency: $\epsilon =0.957 \pm 0.008$
+     
+    \end{column}
+\end{columns}
+\end{frame}
+
+% --------------------------------------------------
+
+\subsection{\Zll -Conclusion}
+\begin{frame}
+ \begin{itemize}
+  \item Tag \& Probe efficiencies for \Zll events have been determined for the relevant regions on the csa14 13\tev samples. 
+  \item Muon:
+  \begin{itemize}
+  \item nominal cuts $\epsilon = 0.938 \pm 0.001$ $\met > 125 \gev, \HT > 400 \gev $
+   \item tight cuts  $\epsilon = 0.930 \pm 0.010$ $\met > 400 \gev, \HT > 1000 \gev $
+  \end{itemize}
+  \item electron:
+  \begin{itemize}
+  \item nominal cuts $\epsilon = 0.962 \pm0.001$ $\met > 125 \gev, \HT > 400 \gev $
+   \item tight cuts  $\epsilon = 0.957 \pm 0.008$ $\met > 400 \gev, \HT > 1000 \gev $
+  \end{itemize}
+  \item Overall the 13\tev lepton reconstruction efficiencies are better in respect to 8\tev 
+ \end{itemize}
+
 \end{frame}
 
 % --------------------------------------------------
@@ -166,35 +269,11 @@ Show 8 vs 13 TeV isolation and reconstruction
 \end{frame}
 
 
-% --------------------------------------------------
 
-\subsection{\Zll - Selection \& Efficiency determination}
-\begin{frame}
-%\frametitle{Did We Discover the Standard-Model Higgs?}
-Selection cuts:
-\begin{itemize}
- \item $\met > 125 \gev, \HT > 400 \gev $ and $\Delta\Phi_{N}^{min}>4$
- \item At least 3 jets ($p_{T\text{1}},p_{T\text{2}} > 70\gev$, $p_{T\text{3}} > 50\gev$) and \\ at least 1 CSVL jet
- \item Electrons: miniAOD slimmedElectrons work-point 'veto' ($\pt>17\gev$)
- \item Muons: miniAOD slimmedMuons work-point 'tight' ($\pt>17\gev$)
-\end{itemize}
-Efficiency determination via Tag \& Probe method
-\begin{itemize}
- \item Tag lepton: Nominal cuts $\pt>20\gev$
- \item Probe lepton: Any reconstructed lepton $\pt>17\gev$ and $|\eta|<2.5$
- \item Efficiency: Fit invariant mass of di lepton to events passing/failing tag requirement 
-\end{itemize}
-\end{frame}
+
+
 
 % --------------------------------------------------
-\subsection{\Zll - Conclusion}
-\begin{frame}
-%\frametitle{Did We Discover the Standard-Model Higgs?}
-Show here obtained efficiencies maybe compare to 2012?
-\end{frame}
-
-% --------------------------------------------------
-
 \section{Lost Lepton Background }
 \subsection{Basic concept}
 \begin{frame}
@@ -308,8 +387,34 @@ Closure test for the lost lepton method:\\
   \end{itemize}
 
 \end{frame}
+
+% --------------------------------------------------
+\section{Conclusion}
+\begin{frame}
+
+\begin{itemize}
+ \item Lost-Lepton
+ \begin{itemize}
+  \item Efficiencies have been determined
+  \item Comparison to 8\tev efficiencies show good agreemend with a slight increase espcially for reconstruction efficiency
+  \item Closure test has been performed showing good agreemend between expectation and precdiction
+ \end{itemize}
+  \item \photonJets
+ \begin{itemize}
+  \item Studies on photon properties have been performed 
+  \item Good agreemend between 8\tev and 13\tev studies can be observed
+ \end{itemize}
+ \item \Zll
+ \begin{itemize}
+  \item Efficiencies have been determined using a Tag \& Probe method
+  \item The efficiencies have increase in respect to 8\tev resutls. Overall the efficiencies are higher
+ \end{itemize}
+\end{itemize}
+
+
+\end{frame}
 % --------------------------------------------------
 
-\setcounter{framenumber}{14}
+\setcounter{framenumber}{15}
 
 \end{document}
