@@ -68,13 +68,13 @@
   \begin{itemize}
    \item \ZInvJets events\\
    \begin{itemize}
-    \item \Zll
-    \item \photonJets
+    \item \Zll (Troy Mulholland)
+    \item \photonJets (Andrew Whitbeck)
    \end{itemize}
    \vspace{10mm}
    \item \wpj \& \ttbar events
    \begin{itemize}
-   \item Lost-Lepton Background
+   \item Lost-Lepton Background (Arne-Rasmus Dr\"ager)
    \end{itemize}
    \end{itemize}
   \end{column}
@@ -133,7 +133,8 @@ Efficiency determination via Tag \& Probe method
 \begin{itemize}
  \item Tag lepton: Nominal cuts $\pt>20\gev$
  \item Probe lepton: Any reconstructed lepton $\pt>17\gev$ and $|\eta|<2.5$
- \item Efficiency: Fit invariant mass of di-lepton to events passing/failing tag requirement
+ \item Fit invariant mass of di-lepton system apply tag requirement 
+ \item Efficiency: passing / (passing+failing) (to be probed criteria)
 \end{itemize}
 \end{frame}
 
@@ -145,10 +146,10 @@ Efficiency determination via Tag \& Probe method
  $\met>400, \HT>1000$
    \begin{columns}
     \begin{column}{0.5\textwidth}
-     \centering 8\tev
+     \centering 8\tev (Data)
     \end{column}
         \begin{column}{0.5\textwidth}
-        \centering 13\tev
+        \centering 13\tev (MC)
      
     \end{column}
 \end{columns}
@@ -156,16 +157,21 @@ Efficiency determination via Tag \& Probe method
     \begin{column}{0.5\textwidth}
      \centering
       \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZmm_pass.pdf}
+	\put(60,53){\rotatebox{0}{\scriptsize Pass}}
      \end{overpic}\\
            \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZmm_fail.pdf}
+	      \put(60,53){\rotatebox{0}{\scriptsize Fail}}
      \end{overpic}\\
      
     \end{column}
     \begin{column}{0.5\textwidth}
       \centering
        \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZmm_pass.pdf}
+	 \put(68,75){\rotatebox{0}{\scriptsize Pass}}
+	 \put(100,90){\rotatebox{-45}{\scriptsize \Large Troy}}
       \end{overpic}\\
        \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZmm_fail.pdf}
+	 \put(68,75){\rotatebox{0}{\scriptsize Fail}}
      \end{overpic}
     \end{column}
   \end{columns}
@@ -189,10 +195,10 @@ Efficiency determination via Tag \& Probe method
  $\met>400, \HT>1000$
    \begin{columns}
     \begin{column}{0.5\textwidth}
-     \centering 8\tev
+     \centering 8\tev (Data)
     \end{column}
         \begin{column}{0.5\textwidth}
-        \centering 13\tev
+        \centering 13\tev (MC)
      
     \end{column}
 \end{columns}
@@ -200,16 +206,21 @@ Efficiency determination via Tag \& Probe method
     \begin{column}{0.5\textwidth}
      \centering
       \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZee_pass.pdf}
+	\put(60,53){\rotatebox{0}{\scriptsize Pass}}
      \end{overpic}\\
            \begin{overpic}[width=0.70\textwidth]{figures/ZwithLepLep/8TeVZee_fail.pdf}
+	     \put(60,53){\rotatebox{0}{\scriptsize Fail}}
      \end{overpic}\\
      
     \end{column}
     \begin{column}{0.5\textwidth}
       \centering
        \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZee_pass.pdf}
+	 \put(68,75){\rotatebox{0}{\scriptsize Pass}}
+	 \put(100,90){\rotatebox{-45}{\scriptsize \Large Troy}}
       \end{overpic}\\
        \begin{overpic}[width=0.50\textwidth]{figures/ZwithLepLep/13TeVTightCutZee_fail.pdf}
+	 \put(68,75){\rotatebox{0}{\scriptsize Fail}}
      \end{overpic}
     \end{column}
   \end{columns}
@@ -233,13 +244,13 @@ Efficiency determination via Tag \& Probe method
   \item Tag \& Probe efficiencies for \Zll events have been determined for the relevant regions on the csa14 13\tev samples.
   \item Muon efficiencies:
   \begin{itemize}
-  \item nominal cuts $\epsilon = 0.938 \pm 0.001$ $\met > 125 \gev, \HT > 400 \gev $
-   \item tight cuts  $\epsilon = 0.930 \pm 0.010$ $\met > 400 \gev, \HT > 1000 \gev $
+  \item nominal cuts $\epsilon = 0.938 \pm 0.001$ ($\met > 125 \gev, \HT > 400 \gev $)
+   \item tight cuts  $\epsilon = 0.930 \pm 0.010$ ( $\met > 400 \gev, \HT > 1000 \gev $)
   \end{itemize}
   \item Electron efficiencies:
   \begin{itemize}
-  \item nominal cuts $\epsilon = 0.962 \pm0.001$ $\met > 125 \gev, \HT > 400 \gev $
-   \item tight cuts  $\epsilon = 0.957 \pm 0.008$ $\met > 400 \gev, \HT > 1000 \gev $
+  \item nominal cuts $\epsilon = 0.962 \pm0.001$ ($\met > 125 \gev, \HT > 400 \gev $)
+   \item tight cuts  $\epsilon = 0.957 \pm 0.008$ ($\met > 400 \gev, \HT > 1000 \gev $)
   \end{itemize}
   \item Overall the 13\tev lepton reconstruction efficiencies are better in respect to 8\tev
  \end{itemize}
@@ -286,7 +297,10 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
      \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_pixelSeed-eps-converted-to.pdf} \end{overpic}
    \end{column}
    \begin{column}{0.33\textwidth}
-     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_sigmaIetaIeta-eps-converted-to.pdf} \end{overpic}
+     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_sigmaIetaIeta-eps-converted-to.pdf} 
+      \put(35,94){\rotatebox{0}{\scriptsize Barrel only}}
+      \put(90,110){\rotatebox{-45}{\scriptsize \Large Andrew}}
+      \end{overpic}
 
    \end{column}
 
@@ -312,11 +326,6 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
 \subsection{\photonJets - ID/Iso Selection}
 \begin{frame}
 \frametitle{Photon ID/Iso Selection 8\tev}
-\begin{itemize}
- \item Rho correction to the isolation variables applied \\
- $\text{ISO}_{\text{corr}} = \text{max}(\text{Iso} - \text{E}_{\text{A}} \cdot \rho , 0) $
- \item Same $\text{E}_{\text{A}}$ as for 8\tev analysis
-\end{itemize}
     \begin{columns}
    \begin{column}{0.33\textwidth}
   \begin{overpic}[width=1\textwidth]{figures/ZwithGamma/table.png} \end{overpic}
@@ -325,7 +334,11 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
    \begin{overpic}[width=1\textwidth]{figures/ZwithGamma/table2.png} \end{overpic}
  \end{column}
 \end{columns}
-
+\begin{itemize}
+ \item Rho correction to the isolation variables applied \\
+ $\text{ISO}_{\text{corr}} = \text{max}(\text{Iso} - \text{E}_{\text{A}} \cdot \rho , 0) $
+ \item Same $\text{E}_{\text{A}}$ as for 8\tev analysis
+\end{itemize}
 
 
 \end{frame}
@@ -337,12 +350,19 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
 
 % --------------------------------------------------
 \section{Lost-Lepton Background }
+\begin{frame}
+  \begin{center}
+    \Large Lost-Lepton Background
+    
+  \end{center}
+\end{frame}
+
 \subsection{Basic concept}
 \begin{frame}
   \frametitle{Mainly \ttbar and \wpj events where prompt electrons or muons are lost}
    \begin{figure}
  \centering
-  \includegraphics[width = 0.65\textwidth]{figures/lepton_veto_sketch.png}
+  \includegraphics[width = 0.65\textwidth]{figures/lost-lepton/lepton_veto_sketch.png}
 %  \caption{Awesome figure}
  \end{figure}
       \begin{itemize}
@@ -375,7 +395,7 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
         \item Highly virtual W
         \end{itemize}
       \begin{centering}
-     % \begin{overpic}[width=0.7\textwidth]{figures/MuMTWMHTNjet.pdf}
+     % \begin{overpic}[width=0.7\textwidth]{figures/lost-lepton/MuMTWMHTNjet.pdf}
     %  \end{overpic}
       \end{centering}
       \item Correction as a function of \MHT, \NJets applied
@@ -383,13 +403,14 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
     \end{column}
     \begin{column}{0.6\textwidth}
       \centering
-      \begin{overpic}[width=0.8\textwidth]{figures/ControlSample__MTW__MCPrMTWDiLepTTbar+MCPrMTWDiLepW__mu_control_sample.pdf}
+      \begin{overpic}[width=0.8\textwidth]{figures/lost-lepton/ControlSample__MTW__MCPrMTWDiLepTTbar+MCPrMTWDiLepW__mu_control_sample.pdf}
         \put(41.52,83){\color{black}\line(0,-1){67}}
+	\put(90,90){\rotatebox{-45}{\scriptsize \Large Arne}}
     %    \put(6,39){\colorbox{white}{\textcolor{red}{\bf BSM decays?}}}
     %    \put(97,88){\rotatebox{-90}{\scriptsize CMS PAS HIG-14-009}}
     %    \put(13,2){\tiny assuming no tree-level modifications}
       \end{overpic}
-   %   \begin{overpic}[width=0.8\textwidth]{figures/2012_ControlSample__MTW__Data_vs_TTbar+WJets__Baseline.pdf}
+   %   \begin{overpic}[width=0.8\textwidth]{figures/lost-lepton/2012_ControlSample__MTW__Data_vs_TTbar+WJets__Baseline.pdf}
     %    \put(41.52,83){\color{black}\line(0,-1){67}}
     %    \put(6,39){\colorbox{white}{\textcolor{red}{\bf BSM decays?}}}
     %    \put(97,88){\rotatebox{-90}{\scriptsize CMS PAS HIG-14-009}}
@@ -403,19 +424,20 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
 \begin{frame}
 \begin{itemize}
  \item The $\mt$ cut reduces di-leptonic \ttbar contribution to the single $\mu$ control sample from ~5\% to about ~3\%
- \item But since the probability of losing two leptons is less likely than one di-leptonic events are overestimated
- \item Separated estimation of lost di-leptonic events applied
+ \item But probability of losing two leptons less likely then one \\di-leptonic events are overestimated
+ \item Therefore, separated estimation of lost di-leptonic events applied
  \item Contribution to total amount of lost-leptons ~1\%
 \end{itemize}
   \begin{columns}
     \begin{column}{0.5\textwidth}
      \centering
-      \begin{overpic}[width=0.95\textwidth]{figures/MuonDiLepMTW.pdf}
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonDiLepMTW.pdf}
      \end{overpic}
     \end{column}
     \begin{column}{0.5\textwidth}
       \centering
-      \begin{overpic}[width=0.95\textwidth]{figures/MuonDiLepEff.pdf}
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonDiLepEff.pdf}
+	\put(87,70){\rotatebox{-45}{\scriptsize \Large Arne}}
       \end{overpic}
     \end{column}
   \end{columns}
@@ -429,16 +451,17 @@ Closure test for the lost-lepton method:\\
   \begin{columns}
     \begin{column}{0.5\textwidth}
      \centering
-      \begin{overpic}[width=0.57\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+      \begin{overpic}[width=0.57\textwidth]{figures/lost-lepton/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
-           \begin{overpic}[width=0.57\textwidth]{figures/Closure__NJets__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+           \begin{overpic}[width=0.57\textwidth]{figures/lost-lepton/Closure__NJets__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
     \end{column}
     \begin{column}{0.5\textwidth}
       \centering
-            \begin{overpic}[width=0.57\textwidth]{figures/Closure__MHT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+            \begin{overpic}[width=0.57\textwidth]{figures/lost-lepton/Closure__MHT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+	      \put(90,90){\rotatebox{-45}{\scriptsize \Large Arne}}
      \end{overpic}
-      \begin{overpic}[width=0.57\textwidth]{figures/Closure__METPt__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+      \begin{overpic}[width=0.57\textwidth]{figures/lost-lepton/Closure__METPt__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
       \end{overpic}
     \end{column}
   \end{columns}
@@ -456,7 +479,7 @@ Closure test for the lost-lepton method:\\
  \item Lost-Lepton
  \begin{itemize}
   \item Efficiencies have been determined
-  \item Comparison to 8\tev efficiencies show good agreement with a slight increase especially for reconstruction efficiency
+  \item Comparison to 8\tev efficiencies show good agreement
   \item Optimization of binning of efficiencies ongoing
   \item Closure test has been performed showing good agreement between expectation and prediction
  \end{itemize}
@@ -470,12 +493,19 @@ Closure test for the lost-lepton method:\\
   \item Efficiencies have been determined using a Tag \& Probe method
   \item The efficiencies have increase in respect to 8\tev results. Overall the efficiencies are higher
  \end{itemize}
+ \item Status of RA2 - RA2b cooperation
+ \begin{itemize}
+  \item Jointed meetings are being held discussing and exchanging ideas \& synchronization
+  \item Too early to judge if merging possible
+ \end{itemize}
+
+ 
 \end{itemize}
 
 
 \end{frame}
 % --------------------------------------------------
-\section{Conclusion}
+\section{Backup}
 \begin{frame}
   \begin{center}
     {\Large Additional Material}
@@ -485,7 +515,7 @@ Closure test for the lost-lepton method:\\
 \begin{frame}
  \frametitle{Lost-Lepton: Number of Vertices}
  \centering
- \begin{overpic}[width=0.6\textwidth]{figures/Closure__NVtx__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+ \begin{overpic}[width=0.6\textwidth]{figures/lost-lepton/Closure__NVtx__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
 \begin{itemize}
  \item No dependency on the number of primary verticies visible
@@ -493,6 +523,140 @@ Closure test for the lost-lepton method:\\
 
 \end{frame}
 
+
+\begin{frame}
+   \frametitle{Lost-Lepton: $\mu$ reconstruction efficiencies}
+  \begin{columns}
+    \begin{column}{0.33\textwidth}
+     \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonRecoNJetLow.pdf}
+     \end{overpic}
+           \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcMuRecoNJet3_5.pdf}
+     \end{overpic}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonRecoNJetMedium.pdf}
+      \end{overpic}
+ \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcMuRecoNJet6_7.pdf}
+      \end{overpic}
+    \end{column}
+        \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonRecoNJetHgih.pdf} \end{overpic}
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcMuRecoNJet8_Inf.pdf} \end{overpic}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+   \frametitle{Lost-Lepton: $\mu$ isolation efficiencies}
+  \begin{columns}
+    \begin{column}{0.33\textwidth}
+     \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonIsoNJetLow.pdf}
+     \end{overpic}
+           \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcMuIsoNJet3_5.pdf}
+     \end{overpic}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonIsoNJetMedium.pdf}
+      \end{overpic}
+ \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcMuIsoNJet6_7.pdf}
+      \end{overpic}
+    \end{column}
+        \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonIsoNJetHgih.pdf} \end{overpic}
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcMuIsoNJet8_Inf.pdf} \end{overpic}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+   \frametitle{Lost-Lepton: elec reconstruction efficiencies}
+  \begin{columns}
+    \begin{column}{0.33\textwidth}
+     \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/ElecRecoNJetLow.pdf}
+     \end{overpic}
+           \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcElecRecoNJet3_5.pdf}
+     \end{overpic}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/ElecRecoNJetMedium.pdf}
+      \end{overpic}
+ \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcElecRecoNJet6_7.pdf}
+      \end{overpic}
+    \end{column}
+        \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/ElecRecoNJetHgih.pdf} \end{overpic}
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcElecRecoNJet8_Inf.pdf} \end{overpic}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+   \frametitle{Lost-Lepton: elec isolation efficiencies}
+  \begin{columns}
+    \begin{column}{0.33\textwidth}
+     \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/ElecIsoNJetLow.pdf}
+     \end{overpic}
+           \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcElecIsoNJet3_5.pdf}
+     \end{overpic}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/ElecIsoNJetMedium.pdf}
+      \end{overpic}
+ \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcElecIsoNJet6_7.pdf}
+      \end{overpic}
+    \end{column}
+        \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/ElecIsoNJetHgih.pdf} \end{overpic}
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffmcElecIsoNJet8_Inf.pdf} \end{overpic}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+   \frametitle{Lost-Lepton: $\mu$ acceptance \& \mt cut efficiency}
+  \begin{columns}
+    \begin{column}{0.33\textwidth}
+     \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuonAcc.pdf}
+     \end{overpic}
+           \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffMuonAccEff3.pdf}
+     \end{overpic}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/ElecAcc.pdf}
+      \end{overpic}
+ \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffElecAccEff3.pdf}
+      \end{overpic}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \centering
+      \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/MuMTWMHTNjet.pdf}
+      \end{overpic}
+ \begin{overpic}[width=0.95\textwidth]{figures/lost-lepton/2012/MCEffMTWCutEffHTMHT.pdf}
+      \end{overpic}
+    \end{column}
+  \end{columns}
+
+\end{frame}
 
 
 \setcounter{framenumber}{15}
