@@ -32,7 +32,7 @@
 
 % Title etc
 \title[G3G-Meeting]{Status Report from RA2/b}
-\subtitle{Background Estimation Methods: \\\ZInvJets using \Zll \& \photonJets events\\ \ttbar \wpj Lost Leptong with \muonJets events}
+\subtitle{Background Estimation Methods: \\\ZInvJets using \Zll \& \photonJets events\\ \ttbar \wpj Lost-Lepton with \muonJets events}
 \author[Arne-Rasmus~Dr\"ager]{
   Arne-Rasmus~Dr\"ager (Uni Hamburg)\\on behalf of the RA2/b team
 }
@@ -62,20 +62,30 @@
 \section{Outline}
 % --------------------------------------------------
 \begin{frame}
-\frametitle{Status of background estimation methods on 13 \tev}
-
+\frametitle{Status of Background Estimation Methods \\ using 13\tev csa14 samples}
+\begin{columns}
+ \begin{column}{0.5\textwidth}
   \begin{itemize}
    \item \ZInvJets events\\
    \begin{itemize}
-    \item \Zll: Efficiencies
-    \item \photonJets: Photon studies 
+    \item \Zll
+    \item \photonJets
    \end{itemize}
-   \item \wpj \& \ttbar events 
-\begin{itemize}
- \item Lost Lepton determination of efficiencies and full closure
-\end{itemize}
+   \vspace{10mm}
+   \item \wpj \& \ttbar events
+   \begin{itemize}
+   \item Lost-Lepton Background
+   \end{itemize}
+   \end{itemize}
+  \end{column}
+   \begin{column}{0.5\textwidth}
+      \begin{overpic}[width=0.70\textwidth]{figures/ZInvis.png}\end{overpic}
+      \\
+      \vspace{5mm}
+      \begin{overpic}[width=0.70\textwidth]{figures/LostLepton.png}\end{overpic}
+   \end{column}
 
-  \end{itemize}
+\end{columns}
 
 
  
@@ -85,13 +95,13 @@
 \section{\ZInvJets}
 \subsection{\Zll - Introduction}
 \begin{frame}
-%\frametitle{Did We Discover the Standard-Model Higgs?}
+\frametitle{Estimation of \ZInvJets  Using \Zll Events}
 \begin{itemize}
- \item Main Idea: Remove four-momentum of reconstructed \Zll events in RA2b selection (except lepton veto). Recompute relevant quantities (e.q. \met, $\Delta\Phi_{N}^{min}$)
+ \item Main Idea: Remove four-momentum of reconstructed \Zll events in selection (except lepton veto). Recompute relevant quantities (e.q. \met, $\Delta\Phi_{N}^{min}$)
  \item Work flow:
  \begin{itemize}
   \item Correct for branching fraction ($R = 5.95$)
-  \item Increase statistics of \Zll events by loosening bjet tagger and applying a scale factor ($F$) to each b-jet bin
+  \item Increase statistics of \Zll events by loosening b-jet tagger and applying a scale factor ($F$) to each b-jet bin
   \item Measure efficiency ($\epsilon$) of reconstructing \Zll event
   \item Determine and correct for purity ($P$) of \Zll selection
   \item Apply lepton acceptance corrections ($A$)
@@ -111,7 +121,7 @@ Determination of \Zll efficiencies and purity using 13\tev 25ns HT binned DY csa
 
 \subsection{\Zll - Selection \& Efficiency determination}
 \begin{frame}
-%\frametitle{Did We Discover the Standard-Model Higgs?}
+\frametitle{RA2b Selection}
 Selection cuts:
 \begin{itemize}
  \item $\met > 125 \gev, \HT > 400 \gev $ and $\Delta\Phi_{N}^{min}>4$
@@ -123,7 +133,7 @@ Efficiency determination via Tag \& Probe method
 \begin{itemize}
  \item Tag lepton: Nominal cuts $\pt>20\gev$
  \item Probe lepton: Any reconstructed lepton $\pt>17\gev$ and $|\eta|<2.5$
- \item Efficiency: Fit invariant mass of di lepton to events passing/failing tag requirement 
+ \item Efficiency: Fit invariant mass of di-lepton to events passing/failing tag requirement
 \end{itemize}
 \end{frame}
 
@@ -216,21 +226,22 @@ Efficiency determination via Tag \& Probe method
 
 % --------------------------------------------------
 
-\subsection{\Zll -Conclusion}
+\subsection{\Zll}
 \begin{frame}
+\frametitle{Summary Progress \Zll}
  \begin{itemize}
-  \item Tag \& Probe efficiencies for \Zll events have been determined for the relevant regions on the csa14 13\tev samples. 
-  \item Muon:
+  \item Tag \& Probe efficiencies for \Zll events have been determined for the relevant regions on the csa14 13\tev samples.
+  \item Muon efficiencies:
   \begin{itemize}
   \item nominal cuts $\epsilon = 0.938 \pm 0.001$ $\met > 125 \gev, \HT > 400 \gev $
    \item tight cuts  $\epsilon = 0.930 \pm 0.010$ $\met > 400 \gev, \HT > 1000 \gev $
   \end{itemize}
-  \item electron:
+  \item Electron efficiencies:
   \begin{itemize}
   \item nominal cuts $\epsilon = 0.962 \pm0.001$ $\met > 125 \gev, \HT > 400 \gev $
    \item tight cuts  $\epsilon = 0.957 \pm 0.008$ $\met > 400 \gev, \HT > 1000 \gev $
   \end{itemize}
-  \item Overall the 13\tev lepton reconstruction efficiencies are better in respect to 8\tev 
+  \item Overall the 13\tev lepton reconstruction efficiencies are better in respect to 8\tev
  \end{itemize}
 
 \end{frame}
@@ -238,6 +249,7 @@ Efficiency determination via Tag \& Probe method
 % --------------------------------------------------
 \subsection{\photonJets - Introduction}
 \begin{frame}
+\frametitle{\ZInv estimation using \photonJets events}
 %\frametitle{Did We Discover the Standard-Model Higgs?}
 \begin{itemize}
  \item Main Idea: Exploit kinematic similarities of Z/$\gamma$ at high boson \pt.
@@ -260,12 +272,62 @@ Compare $\epsilon_{\text{ID/Iso}}$ efficiencies to 8\tev results
 \end{block}
 
 \end{frame}
+\subsection{\photonJets - Photon ID}
+\begin{frame}
+%\frametitle{Comparison $\gamma$ properties}
+   \begin{itemize}
+    \item Photon ID variables:
+   \end{itemize}
+  \begin{columns}
+   \begin{column}{0.33\textwidth}
+     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_hOverE-eps-converted-to.pdf} \end{overpic}
+   \end{column}
+   \begin{column}{0.33\textwidth}
+     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_pixelSeed-eps-converted-to.pdf} \end{overpic}
+   \end{column}
+   \begin{column}{0.33\textwidth}
+     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_sigmaIetaIeta-eps-converted-to.pdf} \end{overpic}
 
-\begin{frame}
-Show 8 vs 13 TeV isolation and reconstruction
+   \end{column}
+
+  \end{columns}
+  \begin{itemize}
+   \item Isolation of photons passing ID requirements \& $p_{T}^{\gamma}>100\gev$
+  \end{itemize}
+
+    \begin{columns}
+   \begin{column}{0.33\textwidth}
+     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_coneIsoCharged-eps-converted-to.pdf} \end{overpic}
+   \end{column}
+   \begin{column}{0.33\textwidth}
+     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_coneIsoNeutral-eps-converted-to.pdf} \end{overpic}
+   \end{column}
+   \begin{column}{0.33\textwidth}
+     \begin{overpic}[width=0.8\textwidth]{figures/ZwithGamma/8_13Comp_coneIsoPhoton-eps-converted-to.pdf} \end{overpic}
+   \end{column}
+
+  \end{columns}
+
 \end{frame}
+\subsection{\photonJets - ID/Iso Selection}
 \begin{frame}
- Conclusion
+\frametitle{Photon ID/Iso Selection 8\tev}
+\begin{itemize}
+ \item Rho correction to the isolation variables applied \\
+ $\text{ISO}_{\text{corr}} = \text{max}(\text{Iso} - \text{E}_{\text{A}} \cdot \rho , 0) $
+ \item Same $\text{E}_{\text{A}}$ as for 8\tev analysis
+\end{itemize}
+    \begin{columns}
+   \begin{column}{0.33\textwidth}
+  \begin{overpic}[width=1\textwidth]{figures/ZwithGamma/table.png} \end{overpic}
+ \end{column}
+ \begin{column}{0.66\textwidth}
+   \begin{overpic}[width=1\textwidth]{figures/ZwithGamma/table2.png} \end{overpic}
+ \end{column}
+\end{columns}
+
+
+
 \end{frame}
 
 
@@ -274,10 +336,10 @@ Show 8 vs 13 TeV isolation and reconstruction
 
 
 % --------------------------------------------------
-\section{Lost Lepton Background }
+\section{Lost-Lepton Background }
 \subsection{Basic concept}
 \begin{frame}
-  \frametitle{Mainly \ttbar and \wpj events where prompt electrons and muons are lost}
+  \frametitle{Mainly \ttbar and \wpj events where prompt electrons or muons are lost}
    \begin{figure}
  \centering
   \includegraphics[width = 0.65\textwidth]{figures/lepton_veto_sketch.png}
@@ -286,7 +348,7 @@ Show 8 vs 13 TeV isolation and reconstruction
       \begin{itemize}
       \item Select a control sample (CS) of exactly one well isolated $\mu$ within the acceptance
         \begin{itemize}
-        \item Weight each CS event according to efficiencies for each identification step \\ (efficiencies determined from \ttbar and \wpj sample)
+        \item Weight each CS event according to efficiencies for each identification step (efficiencies determined from \ttbar and \wpj sample)
         \item Isolation and reconstruction efficiency in \HT, \MHT and \NJets parametrized
         \item Acceptance in \MHT and \NJets
         \end{itemize}
@@ -306,9 +368,9 @@ Show 8 vs 13 TeV isolation and reconstruction
     \begin{column}{0.4\textwidth}
 
       \begin{itemize}
-      \item Removes about 15\% of $\mu$ CS
+      \item Removes about 15\% of $\mu$ CS due to:
         \begin{itemize}
-        \item Most of them di-leptonic \ttbar decays
+        \item di-leptonic \ttbar decays
         \item Mismeasured jets
         \item Highly virtual W
         \end{itemize}
@@ -316,7 +378,7 @@ Show 8 vs 13 TeV isolation and reconstruction
      % \begin{overpic}[width=0.7\textwidth]{figures/MuMTWMHTNjet.pdf}
     %  \end{overpic}
       \end{centering}
-      \item Correction as a function of \MHT \NJets applied
+      \item Correction as a function of \MHT, \NJets applied
       \end{itemize}
     \end{column}
     \begin{column}{0.6\textwidth}
@@ -337,13 +399,13 @@ Show 8 vs 13 TeV isolation and reconstruction
   \end{columns}
 \end{frame}
 % --------------------------------------------------
-\subsection{di leptonic contribution}
+\subsection{di-leptonic contribution}
 \begin{frame}
 \begin{itemize}
- \item The $\mt$ cut reduces di leptonic \ttbar contribution to the single $\mu$ control sample from ~5\% to about ~3\%
- \item But since the probability of losing two leptons is less likely than one di leptonic events are overestimated
- \item Separated estimation of lost di leptonic events applied
- \item Contribution to total amount of lost leptons ~1\%
+ \item The $\mt$ cut reduces di-leptonic \ttbar contribution to the single $\mu$ control sample from ~5\% to about ~3\%
+ \item But since the probability of losing two leptons is less likely than one di-leptonic events are overestimated
+ \item Separated estimation of lost di-leptonic events applied
+ \item Contribution to total amount of lost-leptons ~1\%
 \end{itemize}
   \begin{columns}
     \begin{column}{0.5\textwidth}
@@ -362,27 +424,26 @@ Show 8 vs 13 TeV isolation and reconstruction
 \subsection{Closure}
 \begin{frame}
 
-Closure test for the lost lepton method:\\
+Closure test for the lost-lepton method:\\
 \centering$\HT > 500 \gev$ , $\MHT>100 \gev$, $\NJets\ge 3$ , $\Delta\Phi_{1,2,3}>$0.5, 0.5, 0.3
   \begin{columns}
     \begin{column}{0.5\textwidth}
      \centering
-      \begin{overpic}[width=0.6\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+      \begin{overpic}[width=0.57\textwidth]{figures/Closure__HT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
-           \begin{overpic}[width=0.6\textwidth]{figures/Closure__NJets__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+           \begin{overpic}[width=0.57\textwidth]{figures/Closure__NJets__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
     \end{column}
     \begin{column}{0.5\textwidth}
       \centering
-            \begin{overpic}[width=0.6\textwidth]{figures/Closure__MHT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+            \begin{overpic}[width=0.57\textwidth]{figures/Closure__MHT__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
-      \begin{overpic}[width=0.6\textwidth]{figures/Closure__METPt__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
+      \begin{overpic}[width=0.57\textwidth]{figures/Closure__METPt__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
       \end{overpic}
     \end{column}
   \end{columns}
   \begin{itemize}
-   \item Good agreemend between expectation ($30462.9 \pm 60.0$) and prediction($29777.3 \pm 80.0$) for all search variables
-   \item No pileup dependency visible
+   \item Good agreement between expectation ($30462.9 \pm 60.0$) and prediction($29777.3 \pm 80.0$) for all search variables
   \end{itemize}
 
 \end{frame}
@@ -395,19 +456,19 @@ Closure test for the lost lepton method:\\
  \item Lost-Lepton
  \begin{itemize}
   \item Efficiencies have been determined
-  \item Comparison to 8\tev efficiencies show good agreemend with a slight increase espcially for reconstruction efficiency
+  \item Comparison to 8\tev efficiencies show good agreement with a slight increase especially for reconstruction efficiency
   \item Optimization of binning of efficiencies ongoing
-  \item Closure test has been performed showing good agreemend between expectation and precdiction
+  \item Closure test has been performed showing good agreement between expectation and prediction
  \end{itemize}
   \item \photonJets
  \begin{itemize}
-  \item Studies on photon properties have been performed 
-  \item Good agreemend between 8\tev and 13\tev studies can be observed
+  \item Studies on photon properties have been performed
+  \item Investigated photon ID variables agree well with 8\tev results
  \end{itemize}
  \item \Zll
  \begin{itemize}
   \item Efficiencies have been determined using a Tag \& Probe method
-  \item The efficiencies have increase in respect to 8\tev resutls. Overall the efficiencies are higher
+  \item The efficiencies have increase in respect to 8\tev results. Overall the efficiencies are higher
  \end{itemize}
 \end{itemize}
 
@@ -422,12 +483,12 @@ Closure test for the lost lepton method:\\
 \end{frame}
 
 \begin{frame}
- \frametitle{Lost Lepton: Number of Vertices}
+ \frametitle{Lost-Lepton: Number of Vertices}
  \centering
  \begin{overpic}[width=0.6\textwidth]{figures/Closure__NVtx__MCPrMTWDiLep_vs_MCEx__csa_Baseline.pdf}
      \end{overpic}
 \begin{itemize}
- \item No dependency on the number of primariy verticies visible
+ \item No dependency on the number of primary verticies visible
 \end{itemize}
 
 \end{frame}
